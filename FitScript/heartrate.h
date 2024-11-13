@@ -7,7 +7,7 @@
 #include <iostream>
 #include <fstream>
 using namespace std;
-#include "string.h"
+#include "string"
 
 class Heartrate {
 public:
@@ -17,7 +17,8 @@ public:
 public:
 	// constructor
 	Heartrate() {
-
+		// create file on initialization
+		createHeartrateFile();
 	}
 
 	// deconstructor
@@ -35,14 +36,37 @@ public:
 			return false;
 		}
 
-		cout << "writing to file: " << HEARTRATEFILE << endl;
+		cout << "create file: " << HEARTRATEFILE << endl;
 		//file << 10 << endl;
+
+		// close file
+		file.close();
 
 		return true;
 	}
 
 	// read heartrate from file
-	int readBpm();
+	int readBpm() {
+		// input stream
+		ifstream file(HEARTRATEFILE);
+
+		// error handling
+		if (!file) {
+			cout << "Error creating file" << endl;
+			return false;
+		}
+
+		string line, lastLine;
+
+		// loop until last line
+		while (getline(file, line)) {
+			// set lastLine
+			lastLine = line;
+		}
+
+		// convert lastline to int and return
+		return stoi(lastLine);
+	}
 
 	// set bpm
 	bool setBpm();
