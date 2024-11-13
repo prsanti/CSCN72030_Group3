@@ -5,6 +5,8 @@ using namespace std;
 #include "heartrate.h"
 
 int main(void) {
+	Heartrate h;
+
 
 	return 0;
 }
