@@ -7,7 +7,7 @@
 #include <iostream>
 #include <fstream>
 using namespace std;
-#include "string"
+#include <string>
 
 class Heartrate {
 public:
@@ -26,7 +26,7 @@ public:
 
 	}
 
-	bool createHeartrateFile() {
+	bool createHeartrateFile(void) {
 		// create file
 		ofstream file(HEARTRATEFILE);
 
@@ -52,7 +52,7 @@ public:
 	}
 
 	// read heartrate from file
-	int readBpm() {
+	int readBpm(void) {
 		// input stream
 		ifstream file(HEARTRATEFILE);
 
@@ -75,10 +75,15 @@ public:
 	}
 
 	// set bpm
-	bool setBpm() {
+	bool setBpm(void) {
 		bpm = readBpm();
 
 		return true;
+	}
+
+	// simulate resting bpm
+	void simulateRestingBpm() {
+
 	}
 
 	// calculate resting BPM
