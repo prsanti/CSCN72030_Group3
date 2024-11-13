@@ -129,11 +129,13 @@
   <ItemGroup>
     <ClCompile Include="heartrate.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="muscleGroup.cpp" />
     <ClCompile Include="WeightExercise.cpp" />
     <ClCompile Include="weightMachine.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="heartrate.h" />
+    <ClInclude Include="muscleGroup.h" />
     <ClInclude Include="weightExercise.h" />
     <ClInclude Include="weightMachine.h" />
   </ItemGroup>

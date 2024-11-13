@@ -13,6 +13,7 @@ private:
     int repetitions;
 
 public:
+    WeightExercise();
     WeightExercise(WeightMachine& wm, double w, int s, int r);
     WeightMachine getWeightMachine();
     void setWeightMachine(WeightMachine& wm);

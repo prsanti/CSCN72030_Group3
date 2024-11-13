@@ -3,22 +3,24 @@
 #include <fstream>
 #include <string>
 #include <list>
+#include "muscleGroup.h"
 
 using namespace std;
 
 class WeightMachine {
 private:
     string name;
-    string muscleGroup;
+    MuscleGroup muscleGroup;
     double caloriesBurntPerRep;
     double maxWeight;
 
 public:
-    WeightMachine(string& n, string& mg, double cbRep, double maxW);
+    WeightMachine();
+    WeightMachine(string& n, MuscleGroup mg, double cbRep, double maxW);
     string getName();
     void setName(string& n);
-    string getMuscleGroup();
-    void setMuscleGroup(string& mg);
+    MuscleGroup getMuscleGroup();
+    void setMuscleGroup(MuscleGroup mg);
     double getCaloriesBurntPerRep();
     void setCaloriesBurntPerRep(double cbRep);
     double getMaxWeight();

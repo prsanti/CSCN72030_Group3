@@ -1,13 +1,13 @@
 #include "weightMachine.h"
 
+WeightMachine::WeightMachine() : name(""), muscleGroup(), caloriesBurntPerRep(0.0), maxWeight(0.0) {}
 
-WeightMachine::WeightMachine(string& n, string& mg, double cbRep, double maxW) {
+WeightMachine::WeightMachine(string& n, MuscleGroup mg, double cbRep, double maxW) {
     name = n;
     muscleGroup = mg;
     caloriesBurntPerRep = cbRep;
     maxWeight = maxW;
 }
-
 
 string WeightMachine::getName() {
     return name;
@@ -19,12 +19,12 @@ void WeightMachine::setName(string& n) {
 }
 
 
-string WeightMachine::getMuscleGroup() {
+MuscleGroup WeightMachine::getMuscleGroup() {
     return muscleGroup;
 }
 
 
-void WeightMachine::setMuscleGroup(string& mg) {
+void WeightMachine::setMuscleGroup(MuscleGroup mg) {
     muscleGroup = mg;
 }
 

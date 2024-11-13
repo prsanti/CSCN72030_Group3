@@ -1,5 +1,7 @@
 #include "weightExercise.h"
 
+WeightExercise::WeightExercise() : weight(0.0), sets(0), repetitions(0) {}
+
 WeightExercise::WeightExercise(WeightMachine& wm, double w, int s, int r) {
     weightMachine = wm;
     weight = w;
