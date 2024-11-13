@@ -37,7 +37,13 @@ public:
 		}
 
 		cout << "create file: " << HEARTRATEFILE << endl;
-		//file << 10 << endl;
+		// sample write
+		file << 10 << endl;
+		file << 101 << endl;
+		file << 102 << endl;
+		file << 103 << endl;
+		file << 104 << endl;
+		file << 105 << endl;
 
 		// close file
 		file.close();
@@ -69,7 +75,11 @@ public:
 	}
 
 	// set bpm
-	bool setBpm();
+	bool setBpm() {
+		bpm = readBpm();
+
+		return true;
+	}
 
 	// calculate resting BPM
 	int calculateRestingBpm();
