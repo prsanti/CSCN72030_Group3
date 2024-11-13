@@ -21,9 +21,15 @@
     <ClCompile Include="heartrate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="weightmachine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="heartrate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="weightMachine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
