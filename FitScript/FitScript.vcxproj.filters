@@ -24,12 +24,27 @@
     <ClCompile Include="weightmachine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="muscleGroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WeightExercise.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="calories.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="heartrate.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="weightMachine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="muscleGroup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="weightExercise.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="calories.cpp" />
     <ClCompile Include="heartrate.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="muscleGroup.cpp" />
